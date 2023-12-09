@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docx Editor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="editor" contenteditable="true" onclick="placeText(event)">
+    <!-- Initial content or loaded document content will appear here -->
+  </div>
+
+  <div>
+    <label for="colorPicker">Text Color:</label>
+    <input type="color" id="colorPicker">
+    
+    <label for="fontSelect">Text Font:</label>
+    <select id="fontSelect">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Verdana">Verdana</option>
+<option value="Roman">Roman</option>
+<option value="Stylus">Stylus</option>
+<option value="Onyx">Onyx</option>
+<option value="Nyala">Nyala</option>
+<option value="Castellar">Castellar</option>
+<option value="Broadway">Broadway</option>
+<option value="Script">Script</option>
+      <!-- Add more font options as needed -->
+    </select>
+
+    <label for="fontSize">Text Size:</label>
+    <input type="number" id="fontSize" min="8" max="72" value="14">
+    
+    <input type="button" value="Save Document" onclick="saveDocument()">
+    <button onclick="undo()">Undo</button>
+    <button onclick="redo()">Redo</button>
+    <button onclick="addText()">Add Text</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
