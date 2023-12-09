@@ -1,2 +1,2 @@
 # Simple-Text-Editor
-simple text editor
+simple text editor usin html, css and javascript
